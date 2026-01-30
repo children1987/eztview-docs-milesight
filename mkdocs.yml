@@ -55,7 +55,7 @@ markdown_extensions:
   - pymdownx.superfences
 
 extra:
-  homepage: https://www.eztview.com/
+  homepage: http://152.136.130.147:8083
   generator: true
 
 extra_css:
