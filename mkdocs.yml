@@ -1,0 +1,67 @@
+site_name: EZtView文档中心
+
+site_url: https://children1987.github.io/eztview-docs/
+use_directory_urls: true
+
+plugins:
+  - search
+  - mermaid2
+
+theme:
+  language: zh
+  name: material
+  features:
+    - search.suggest
+    - search.highlight
+    - toc.follow
+    - content.action.edit
+    - content.action.view
+    #- navigation.tracking
+  logo: img/logo.png
+  favicon: img/favicon.ico
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      primary: custom
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      primary: custom
+      scheme: default 
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      primary: custom
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+markdown_extensions:
+  - toc:
+      title: 摘要
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+
+extra:
+  homepage: https://www.eztview.com/
+  generator: true
+
+extra_css:
+  - stylesheets/extra.css
+
+edit_uri: https://github.com/children1987/eztview-docs/tree/main/docs
+
+nav:
+  - EZtView 快速入门: index.md
