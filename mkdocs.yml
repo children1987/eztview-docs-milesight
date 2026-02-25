@@ -1,4 +1,4 @@
-site_name: EZtView文档中心
+site_name: 文档中心
 
 site_url: https://children1987.github.io/eztview-docs/
 use_directory_urls: true
@@ -17,7 +17,6 @@ theme:
     - content.action.edit
     - content.action.view
     #- navigation.tracking
-  logo: img/logo.png
   favicon: img/favicon.ico
   palette:
     # Palette toggle for automatic mode
