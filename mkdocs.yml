@@ -63,4 +63,4 @@ extra_css:
 edit_uri: https://github.com/children1987/eztview-docs/tree/main/docs
 
 nav:
-  - EZtView 快速入门: index.md
+  - 快速入门: index.md
